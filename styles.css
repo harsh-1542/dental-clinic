@@ -68,6 +68,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {
@@ -503,6 +504,7 @@ input, textarea, select {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .hero-image {
@@ -1678,6 +1680,7 @@ input, textarea, select {
 
   .hero-image-wrapper {
     order: 0;
+    max-width: 100%;
   }
 
   .hero-image {
@@ -1729,6 +1732,10 @@ input, textarea, select {
   .about-grid {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+
+  .about-image-wrapper {
+    overflow: hidden;
   }
 
   .about-image img {
